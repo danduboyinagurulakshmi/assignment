@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <style>
+        body{
+    border:2px solid black;
+    padding:10px;
+    margin:10px;
+    background-color:lightgrey;
+    text-align:center;
+    background-color:lightblue;
+
+}
+    </style>
+
+</head>
+
+<body>
+    <h2>login page</h2>
+    username<input type="number" id="username" placeholder="enter a username">
+    <br>
+    <br>
+    password<input type="number" id="password" placeholder="enter a password">
+    <br>
+    <br>
+    <button onclick="login()">login</button>
+<script>
+    function login(){
+    let username=document.getElementById("username").value
+    let password=document.getElementById("password").value
+    if(username=="9949074582" && password=="12345"){
+        alert("login successful");
+    }
+    else{
+        alert("invalid password or username");
+    }
+}
+</script>
+</body>
+</html>
